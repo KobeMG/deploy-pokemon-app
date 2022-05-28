@@ -39,7 +39,8 @@ const MainPage = () => {
             setPokemonWeight(weight);
         };
         fetchPokemonStats();
-    });
+    }, [pokemonID]);
+
 
 
     return (
