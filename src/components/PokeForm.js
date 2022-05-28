@@ -9,7 +9,7 @@ const PokeForm = (props) => {
     const [trainerName, setTrainerName] = useState("Anonimo"); //Nombre anonimo por defecto
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post("http://localhost:4000/posting",
+        axios.post("https://wildpokemon-app.herokuapp.com/posting",
             {
                 trainerName: trainerName,
                 pokemonID: props.ID
