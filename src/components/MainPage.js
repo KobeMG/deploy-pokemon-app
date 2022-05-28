@@ -11,7 +11,7 @@ const MainPage = () => {
     const [pokemonWeight, setPokemonWeight] = useState(0);  //Peso del pokemon
     const [pokemonHeight, setPokemonHeight] = useState(0);//altura del pokemon
 
-    useEffect(() => {
+   
         console.log("El id del pokemon es: " + pokemonID);
         const fetchImage = async () => {
             const res = await fetch("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + pokemonID + ".png");
@@ -39,7 +39,7 @@ const MainPage = () => {
             setPokemonWeight(weight);
         };
         fetchPokemonStats();
-    });
+   
 
 
     return (
